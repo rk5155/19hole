@@ -15,20 +15,18 @@
 <body>
     <header id="header">
         <ul>
-            <!-- コンポーネント版 -->
-            <!-- <header-list v-for="list in lists" v-bind:title="list.title"></header-list> -->
-
-            <li v-for="list in lists">{{ list.title }}</li>
-        </ul>
-        
-        
+          <router-link to="/home">Home</router-link><br />  
+          <router-link to="/about">About</router-link><br />
+          <router-link to="/contact">Contact</router-link>
+        </ul>        
     </header>
 
-    <div id="app">
-        <router-link to="/foo">Go to Foo</router-link><br />
-        <router-link to="/bar">Go to Bar</router-link>
-        <router-view></router-view>
-    </div>
+    <main id="main">
+      
+      <router-view></router-view>
+    </main>
+
+    
 
     
     

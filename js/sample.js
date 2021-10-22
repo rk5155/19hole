@@ -1,23 +1,7 @@
-// コンポーネント版
-// Vue.component('header-list', {
-//     props: ['title'],
-//     template: '<li>{{ title }}</li>'
-// })
-
-new Vue({
-    el: '#header',
-    data: {
-      lists: [
-        { id: 1, title: 'ABOUT' },
-        { id: 2, title: 'MEMBER' },
-        { id: 3, title: 'CONTACT' }
-      ]
-    }
-})
-
 const routes = [
-  { path: '/foo', component: httpVueLoader('./foo.vue') },
-  { path: '/bar', component: httpVueLoader('./bar.vue') }
+  { path: '/home', component: httpVueLoader('./home.vue') },
+  { path: '/about', component: httpVueLoader('./about.vue') },
+  { path: '/contact', component: httpVueLoader('./contact.vue') }
 ];
 
 const router = new VueRouter({
@@ -25,6 +9,14 @@ const router = new VueRouter({
 });
 
 new Vue({
-  el: '#app',
+  el: '#header',
   router: router
 });
+
+new Vue({
+  el: '#main',
+  router: router
+});
+
+
+
