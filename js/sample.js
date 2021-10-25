@@ -1,10 +1,11 @@
 const routes = [
-  { path: '/home', component: httpVueLoader('./home.vue') },
+  { path: '/', component: httpVueLoader('./home.vue') },
   { path: '/about', component: httpVueLoader('./about.vue') },
   { path: '/contact', component: httpVueLoader('./contact.vue') }
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes
 });
 

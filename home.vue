@@ -10,6 +10,26 @@
             </div>
         </div>
 
+        <div id="app">
+        <hooper :auto-play="true" :play-speed="2000">
+      
+          <slide>
+            slide 1
+          </slide>
+          <slide>
+            slide 2
+          </slide>
+          <slide>
+            slide 3
+          </slide>
+          <slide>
+            slide 4
+          </slide>
+        </hooper>
+      </div>
+
+      
+
         
     </div>
 </template>

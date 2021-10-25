@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav4">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <router-link class="nav-link" to="/home">Home</router-link>
+                    <router-link class="nav-link" to="/">Home</router-link>
                 </li>
                 <li class="nav-item">
                   <router-link class="nav-link" to="/about">About</router-link>
@@ -53,23 +53,7 @@
     </header>
 
     <main id="main">
-      <div id="app">
-        <hooper :auto-play="true" :play-speed="2000">
       
-          <slide>
-            slide 1
-          </slide>
-          <slide>
-            slide 2
-          </slide>
-          <slide>
-            slide 3
-          </slide>
-          <slide>
-            slide 4
-          </slide>
-        </hooper>
-      </div>
       
       <router-view></router-view>
 
