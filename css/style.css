@@ -1,3 +1,9 @@
+@charset "UTF-8";
+body {
+  font-family: Montserrat, 游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+  color: #333333 !important;
+}
+
 #main {
   margin: 0 auto;
 }
@@ -30,5 +36,33 @@
 
 header .link-active {
   color: palevioletred !important;
+}
+
+.text-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin: 100px 0;
+}
+
+.text-box h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.text-box p {
+  line-height: 2.4;
+}
+
+.text-box img {
+  width: 500px !important;
 }
 /*# sourceMappingURL=style.css.map */

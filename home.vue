@@ -3,6 +3,22 @@
         <img class="" src="img/main.jpeg" alt="">
 
         <div class="home">
+            <div class="text-box">
+                <div>
+                    <h2>ゴルフで人と繋がる。</h2>
+                    <p>
+                        ゴルフを始めたけど、一緒に行く仲間がいない。<br>
+                        たくさんの人に出会えるし、少しでも上手くなろうと一生懸命に練習する姿は美しい。<br>
+                        同世代のゴルフ友達が欲しい。<br>
+                        ゴルフを通してたくさんの知り合いが欲しい。<br>
+
+                        Enjoy Golf!! 新しいゴルフが始まります。
+                    </p>
+                </div>
+
+                <img src="img/img_01.jpg" alt="">
+            </div>
+
             <div>
                 <h2>schedule</h2>
 
