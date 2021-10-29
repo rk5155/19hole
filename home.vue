@@ -29,7 +29,18 @@
 
             <div>
                 <h2>MAMBER</h2>
-                <p-alternate-text v-for="member in members" :key="member.name" :furigana="member.furigana" :name="member.name" :text="member.text"></p-alternate-text>
+
+                <div class="p-alternate" v-for="member in members" :key="member.name">
+                    <img v-bind:src=member.img>
+                    <div class="p-alternate__text">
+                        <span>{{ member.furigana }}</span>
+                        <h3>{{ member.name }}</h3>
+                        <p>
+                            {{ member.text }}
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             
@@ -53,16 +64,19 @@
                 ],
                 members: [
                     { 
+                        img: '/img/img_01.jpg',
                         furigana: 'KAWATA RYUKI', 
                         name: '川田 隆稀', 
                         text: '19HOLE GOLF 代表取締役 シニアルーキーの2010年「富士フィルムシニアチャンピオンシップ」で初優勝を飾り、2000年のレギュラーツアー「東建カップ」以来10年ぶりの勝利を挙げた。レギュラーツアーの初優勝は1987年の「日経カップ」で、96年には「日本プロマッチプレー」で初の日本タイトルを手にしている。高校時代はスキーの選手として国体に出場した経験も持つ。藤田寛之、宮本勝昌などの師匠であり、"チーム芹澤"の長としてテレビ解説などでも活躍中。2015年の「meijiカップ」では西山ゆかりのキャディを務め、西山のツアー初優勝を支えた。'
                     },
                     { 
+                        img: '/img/main.jpeg',
                         furigana: 'ARAI YUji', 
                         name: '荒井 祐二', 
                         text: 'シニアルーキーの2010年「富士フィルムシニアチャンピオンシップ」で初優勝を飾り、2000年のレギュラーツアー「東建カップ」以来10年ぶりの勝利を挙げた。レギュラーツアーの初優勝は1987年の「日経カップ」で、96年には「日本プロマッチプレー」で初の日本タイトルを手にしている。高校時代はスキーの選手として国体に出場した経験も持つ。藤田寛之、宮本勝昌などの師匠であり、"チーム芹澤"の長としてテレビ解説などでも活躍中。2015年の「meijiカップ」では西山ゆかりのキャディを務め、西山のツアー初優勝を支えた。'
                     },
                     { 
+                        img: '/img/img_01.jpg',
                         furigana: 'HASHIMOTO KAZUMA', 
                         name: '橋本 和馬', 
                         text: 'シニアルーキーの2010年「富士フィルムシニアチャンピオンシップ」で初優勝を飾り、2000年のレギュラーツアー「東建カップ」以来10年ぶりの勝利を挙げた。レギュラーツアーの初優勝は1987年の「日経カップ」で、96年には「日本プロマッチプレー」で初の日本タイトルを手にしている。高校時代はスキーの選手として国体に出場した経験も持つ。藤田寛之、宮本勝昌などの師匠であり、"チーム芹澤"の長としてテレビ解説などでも活躍中。2015年の「meijiカップ」では西山ゆかりのキャディを務め、西山のツアー初優勝を支えた。'
@@ -76,20 +90,6 @@
     Vue.component('schedule', {
         props: ['date', 'location', 'title'],
         template: `<li>{{ date }} {{ location }} {{ title }}</li>`
-    })
-
-    Vue.component('p-alternate-text', {
-        props: ['furigana', 'name', 'text'],
-        template: `<div class="p-alternate">
-                    <img src="" alt="">
-                    <div class="p-alternate__text">
-                        <span>{{ furigana }}</span>
-                        <h3>{{ name }}</h3>
-                        <p>
-                            {{ text }}
-                        </p>
-                    </div>
-                </div>`
     })
 
 </script>
