@@ -1,6 +1,7 @@
 const routes = [
   { path: '/', component: httpVueLoader('./home.vue') },
   { path: '/about', component: httpVueLoader('./about.vue') },
+  { path: '/schedule', component: httpVueLoader('./schedule.vue') },
   { path: '/contact', component: httpVueLoader('./contact.vue') }
 ];
 
