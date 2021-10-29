@@ -27,16 +27,12 @@
                 </ul>
             </div>
 
-            <div class="member">
-                <h2>Member</h2>
-                <div id="member" class="container">
-                    <div class="row">
-
-                        <member v-for="member in members" v-bind:key="member.id" v-bind:title="member.title"></member>
-                        
-                    </div>
-                </div>
+            <div>
+                <h2>MAMBER</h2>
+                <p-alternate-text v-for="member in members" :key="member.name" :furigana="member.furigana" :name="member.name" :text="member.text"></p-alternate-text>
             </div>
+
+            
         </div>
         
         
@@ -56,23 +52,44 @@
                     { id: 4, date: '2021-11-27', location: '佐野ゴルフクラブ', title: '佐野コンペ' },
                 ],
                 members: [
-                    { id: 1, title: 'title1' },
-                    { id: 2, title: 'title2' },
-                    { id: 3, title: 'title3' },
-                    { id: 3, title: 'title4' },
+                    { 
+                        furigana: 'KAWATA RYUKI', 
+                        name: '川田 隆稀', 
+                        text: '19HOLE GOLF 代表取締役 シニアルーキーの2010年「富士フィルムシニアチャンピオンシップ」で初優勝を飾り、2000年のレギュラーツアー「東建カップ」以来10年ぶりの勝利を挙げた。レギュラーツアーの初優勝は1987年の「日経カップ」で、96年には「日本プロマッチプレー」で初の日本タイトルを手にしている。高校時代はスキーの選手として国体に出場した経験も持つ。藤田寛之、宮本勝昌などの師匠であり、"チーム芹澤"の長としてテレビ解説などでも活躍中。2015年の「meijiカップ」では西山ゆかりのキャディを務め、西山のツアー初優勝を支えた。'
+                    },
+                    { 
+                        furigana: 'ARAI YUji', 
+                        name: '荒井 祐二', 
+                        text: 'シニアルーキーの2010年「富士フィルムシニアチャンピオンシップ」で初優勝を飾り、2000年のレギュラーツアー「東建カップ」以来10年ぶりの勝利を挙げた。レギュラーツアーの初優勝は1987年の「日経カップ」で、96年には「日本プロマッチプレー」で初の日本タイトルを手にしている。高校時代はスキーの選手として国体に出場した経験も持つ。藤田寛之、宮本勝昌などの師匠であり、"チーム芹澤"の長としてテレビ解説などでも活躍中。2015年の「meijiカップ」では西山ゆかりのキャディを務め、西山のツアー初優勝を支えた。'
+                    },
+                    { 
+                        furigana: 'HASHIMOTO KAZUMA', 
+                        name: '橋本 和馬', 
+                        text: 'シニアルーキーの2010年「富士フィルムシニアチャンピオンシップ」で初優勝を飾り、2000年のレギュラーツアー「東建カップ」以来10年ぶりの勝利を挙げた。レギュラーツアーの初優勝は1987年の「日経カップ」で、96年には「日本プロマッチプレー」で初の日本タイトルを手にしている。高校時代はスキーの選手として国体に出場した経験も持つ。藤田寛之、宮本勝昌などの師匠であり、"チーム芹澤"の長としてテレビ解説などでも活躍中。2015年の「meijiカップ」では西山ゆかりのキャディを務め、西山のツアー初優勝を支えた。'
+                    }
                 ]
             }
         }
     }
 
-    Vue.component('member', {
-        props: ['title'],
-        template: '<div class="col-md-4 border "><h2>{{ title }}</h2></div>'
-    })
 
     Vue.component('schedule', {
         props: ['date', 'location', 'title'],
         template: `<li>{{ date }} {{ location }} {{ title }}</li>`
+    })
+
+    Vue.component('p-alternate-text', {
+        props: ['furigana', 'name', 'text'],
+        template: `<div class="p-alternate">
+                    <img src="" alt="">
+                    <div class="p-alternate__text">
+                        <span>{{ furigana }}</span>
+                        <h3>{{ name }}</h3>
+                        <p>
+                            {{ text }}
+                        </p>
+                    </div>
+                </div>`
     })
 
 </script>
