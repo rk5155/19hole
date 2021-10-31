@@ -9,14 +9,6 @@
             <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
 
             <div>
-                <h2>schedule</h2>
-
-                <ul>
-                    <schedule v-for="schedule in schedules" :key="schedule.id" :date="schedule.date" :location="schedule.location" :title="schedule.title"></schedule>
-                </ul>
-            </div>
-
-            <div>
                 <h2>MAMBER</h2>
 
                 <div class="p-alternate" v-for="member in members" :key="member.name">
@@ -43,12 +35,6 @@
         data: function() {
             return {
                 text: 'home',
-                schedules: [
-                    { id: 1, date: '2021-11-27', location: '佐野ゴルフクラブ', title: '佐野コンペ' },
-                    { id: 2, date: '2021-12-24', location: '大平台カントリークラブ', title: 'クリスマスコンペ' },
-                    { id: 3, date: '2021-11-27', location: '軽井沢カントリークラブ', title: 'ゴルフ合宿' },
-                    { id: 4, date: '2021-11-27', location: '佐野ゴルフクラブ', title: '佐野コンペ' },
-                ],
                 members: [
                     { 
                         img: '/img/img_01.jpg',

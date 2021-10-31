@@ -43,3 +43,18 @@ Vue.component('main-text', {
                 <img v-bind:src="text.path">
               </div>`
 })
+
+
+const VModal = window["vue-js-modal"].default
+Vue.use(VModal);
+new Vue({
+  el: '#app2',
+  methods: {
+    show : function() {
+      this.$modal.show('hello-world');
+    },
+    hide : function () {
+      this.$modal.hide('hello-world');
+    },
+  }
+})
