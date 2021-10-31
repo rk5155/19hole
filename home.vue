@@ -26,7 +26,10 @@
 
             
         </div>
-        
+
+        <width title="CONTACT" address="mailto:vinder_golf@outlook.jp" text="お問い合わせ" id="contact"></width>
+
+        <width title="Instagram" address="https://www.instagram.com/19hole_golf/" text="INSTAGRAM" id="instagram">Instagram やってます。</width>
     </div>
 </template>
 
@@ -70,8 +73,25 @@
         height: auto;
         background-color: black;
     }
-    .home {
+    .home, .contact__inner {
         width: 1200px;
         margin: 0 auto;
     }
+    
+    #contact {
+        background-color: #007bff;
+        color: #ffffff;
+    }
+    #contact a:hover {
+        color: #007bff;
+    }
+    #instagram {
+        background-color: #E6E28B;
+        color: #ffffff;
+        margin-top: 0px;
+    }
+    #instagram a:hover {
+        color: #E6E28B;
+    }
+    
 </style>

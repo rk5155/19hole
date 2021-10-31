@@ -44,6 +44,17 @@ Vue.component('main-text', {
               </div>`
 })
 
+Vue.component('width', {
+  props: ['title', "id", "address", "text"],
+  template: `<div v-bind:id="id" class="width">
+                <div class="contact__inner">
+                    <h2>{{ title }}</h2>
+                    <p><slot>お問い合わせは下記よりお願いいたします。</slot></p>
+                    <a v-bind:href="address">{{ text }}</a>
+                </div>
+              </div>`
+})
+
 
 const VModal = window["vue-js-modal"].default
 Vue.use(VModal);
