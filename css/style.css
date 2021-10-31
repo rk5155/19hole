@@ -38,6 +38,18 @@ header .link-active {
   color: palevioletred !important;
 }
 
+header .navbar {
+  padding: 24px 40px;
+}
+
+header .navbar-brand {
+  font-size: 30px;
+}
+
+header .nav-link {
+  font-size: 20px;
+}
+
 .text-box {
   display: -webkit-box;
   display: -webkit-flex;
