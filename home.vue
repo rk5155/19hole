@@ -1,6 +1,13 @@
 <template>
-    <div>
-        <img class="" src="img/main.jpeg" alt="">
+    <div id="home">
+        <div class="home__img">
+            <img src="img/main.jpeg" alt="">
+            <h1 class="logo">
+                <div><span class="logo--red">19</span><span class="logo--blue">HOLE</span><br></div>
+                <span class="logo--yellow">GOLF</span>
+            </h1>
+        </div>
+        
 
         <div class="home">
 
@@ -68,6 +75,32 @@
 </script>
 
 <style scoped>
+    .home__img {
+        position: relative;
+    }
+    .logo {
+        color: #333333;
+        background-color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: auto;
+        padding: 40px 20px;
+        
+        
+    }
+    .logo--red {
+        color: palevioletred;
+    }
+    .logo--blue {
+        color: #007bff;
+    }
+    .logo--yellow {
+        color: #E6E28B;
+    }
     img {
         width: 100%;
         height: auto;
