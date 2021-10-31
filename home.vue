@@ -62,12 +62,6 @@
         }
     }
 
-
-    Vue.component('schedule', {
-        props: ['date', 'location', 'title'],
-        template: `<li>{{ date }} {{ location }} {{ title }}</li>`
-    })
-
 </script>
 
 <style scoped>
