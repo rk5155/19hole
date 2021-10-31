@@ -1,6 +1,9 @@
 <template>
-  <div>
-      <b>{{ text }}</b>
+  <div id="about">
+
+      <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
+
+      <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
 
       <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
       
@@ -19,3 +22,10 @@ module.exports = {
   }
 }
 </script>
+
+<style scoped>
+  #about {
+    width: 1200px;
+    margin: 0 auto;
+  }
+</style>
