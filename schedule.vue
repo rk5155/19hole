@@ -56,7 +56,7 @@ const { log }=require("console");
 
     Vue.component('modal-template', {
         props: ['modal'],
-        template: `<modal v-bind:name="modal.name" :draggable="false" :resizable="true">
+        template: `<modal v-bind:name="modal.name" :draggable="false" :resizable="false">
                         <div class="modal-header">
                             <h2>{{ modal.title }}</h2>
                         </div>
@@ -81,7 +81,7 @@ const { log }=require("console");
     }
 
     .modal-header, .modal-body {
-        padding: 5px 25px;
+        padding: 25px;
     }
     .modal-header {
         border-bottom: 1px solid #ddd;

@@ -9,7 +9,7 @@
             <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
 
             <div>
-                <h2>MAMBER</h2>
+                <h2 class="c-title__h2">MAMBER</h2>
 
                 <div class="p-alternate" v-for="member in members" :key="member.name">
                     <img v-bind:src=member.img>
