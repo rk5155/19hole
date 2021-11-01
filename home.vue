@@ -89,8 +89,8 @@
         transform: translateY(-50%) translateX(-50%);
         margin: auto;
         padding: 40px 20px;
-        
-        
+        font-weight: bold;
+        letter-spacing: 0.04em;
     }
     .logo--red {
         color: palevioletred;
