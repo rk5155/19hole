@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <div class="home__img">
+        <div class="home__img"  data-aos="fade-in" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="1500">
             <img src="img/main.jpeg" alt="">
             <h1 class="logo">
                 <div><span class="logo--red">19</span><span class="logo--blue">HOLE</span><br></div>
@@ -18,7 +18,7 @@
             <div>
                 <h2 class="c-title__h2">MAMBER</h2>
 
-                <div class="p-alternate" v-for="member in members" :key="member.name">
+                <div class="p-alternate" v-for="member in members" :key="member.name" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-once="true">
                     <img v-bind:src=member.img>
                     <div class="p-alternate__text">
                         <span>{{ member.furigana }}</span>
