@@ -6,9 +6,19 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
   routes
 });
+
+const VueMq = window['vueMq'];
+
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 600,
+    lg: Infinity,
+  },
+  defaultBreakpoint: 'sm'
+});
+
 
 new Vue({
   el: '#header',

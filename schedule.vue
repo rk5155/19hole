@@ -6,7 +6,14 @@
             <schedule v-for="schedule in schedules" :key="schedule.id" :date="schedule.date" :location="schedule.location" :title="schedule.title" v-on:click.native="show(schedule.modal)"></schedule>
         </ul>
 
-        <modal-template v-for="modal in modals" :key="modal.id" v-bind:modal="modal"></modal-template>
+
+        <div v-if="$mq === 'lg'">
+            <modal-template-pc v-for="modal in modals" :key="modal.id" v-bind:modal="modal"></modal-template-pc>
+        </div>
+        
+        <div v-if="$mq === 'sm'">
+            <modal-template-sp v-for="modal in modals" :key="modal.id" v-bind:modal="modal"></modal-template-sp>
+        </div>
 
   </div>
 </template>
@@ -54,9 +61,21 @@ const { log }=require("console");
                    `
     })
 
-    Vue.component('modal-template', {
+    Vue.component('modal-template-pc', {
         props: ['modal'],
         template: `<modal v-bind:name="modal.name" :draggable="false" :resizable="false">
+                        <div class="modal-header">
+                            <h2>{{ modal.title }}</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>{{ modal.content }}</p>
+                        </div>  
+                   </modal>`
+    })
+
+    Vue.component('modal-template-sp', {
+        props: ['modal'],
+        template: `<modal v-bind:name="modal.name" :draggable="false" :resizable="false" width="100%">
                         <div class="modal-header">
                             <h2>{{ modal.title }}</h2>
                         </div>
