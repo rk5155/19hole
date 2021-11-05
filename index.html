@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/vue-router@3.5.2/dist/vue-router.js"></script>
     <script src="https://unpkg.com/http-vue-loader"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-mq@1.0.1/dist/vue-mq.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-smooth-scroll@1.0.13/dist/vue-smooth-scroll.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.css">
     <script src="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.min.js"></script>
@@ -38,7 +39,7 @@
 <body>
     <header id="header">
       <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand u-font__bold" href="#">19HOLE GOLF</a>
+        <router-link class="navbar-brand u-font__bold" to="/" exact>19HOLE GOLF</router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,6 +68,8 @@
       
       
       <router-view></router-view>
+      
+      <a class="fixed_btn" href="#header" v-smooth-scroll>TOP</a>
 
     </main>
 

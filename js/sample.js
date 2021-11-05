@@ -11,6 +11,10 @@ const router = new VueRouter({
 
 const VueMq = window['vueMq'];
 
+const VueSmoothScroll = window['VueSmoothScroll'];
+
+Vue.use(VueSmoothScroll);
+
 Vue.use(VueMq, {
   breakpoints: {
     sm: 600,

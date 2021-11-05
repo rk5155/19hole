@@ -16,7 +16,7 @@
             <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
 
             <div>
-                <h2 class="c-title__h2">MAMBER</h2>
+                <h2 class="c-title__h2" style="margin: 0 26px 30px;">MAMBER</h2>
 
                 <div class="p-alternate" v-for="member in members" :key="member.name" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-once="true">
                     <img v-bind:src=member.img>
