@@ -218,4 +218,23 @@ footer p {
     padding: 0 26px;
   }
 }
+
+#contact {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+#contact a:hover {
+  color: #007bff;
+}
+
+#instagram {
+  background-color: #E6E28B;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+#instagram a:hover {
+  color: #E6E28B;
+}
 /*# sourceMappingURL=style.css.map */
