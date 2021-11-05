@@ -75,6 +75,10 @@ body {
   width: 500px;
 }
 
+#main .text-box div {
+  width: 57%;
+}
+
 #header nav .navbar-brand {
   color: #007bff;
 }
@@ -209,12 +213,18 @@ footer p {
     letter-spacing: 0.05em;
     line-height: 2.0;
   }
+  #main .text-box div {
+    width: 100%;
+  }
   #main .p-alternate .p-alternate__text {
     width: auto;
     padding: 26px;
   }
   #main .p-alternate .p-alternate__text h3 {
     margin-bottom: 20px;
+  }
+  #main .p-alternate .p-alternate__text p {
+    font-size: 14px;
   }
   #main .p-alternate img {
     width: 100%;
