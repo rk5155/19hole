@@ -37,6 +37,16 @@ body {
   padding: 80px;
 }
 
+#main .p-alternate .p-alternate__text h3 {
+  margin: 6px 0 20px;
+  font-weight: bold;
+}
+
+#main .p-alternate .p-alternate__text p {
+  line-height: 2.0em;
+  font-size: 18px;
+}
+
 #main .text-box {
   display: -webkit-box;
   display: -webkit-flex;
