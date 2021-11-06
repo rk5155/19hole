@@ -98,6 +98,7 @@ const { log }=require("console");
                     <span>{{ date }}</span>
                     <span>{{ location }}</span>
                     <span>{{ title }}</span>
+                    <button type="button" class="btn btn-outline-warning">詳細</button>
                    </li>
                    `
     })

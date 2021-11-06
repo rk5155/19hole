@@ -48,7 +48,7 @@ new Vue({
 // 子コンポーネント
 Vue.component('main-text', {
   props: ['text'],
-  template: `<div class="text-box" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="1000">
+  template: `<div class="text-box">
                 <div>
                     <h2>{{ text.h2 }}</h2>
                     <p v-html="text.p"></p>
