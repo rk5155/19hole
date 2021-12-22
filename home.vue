@@ -2,10 +2,10 @@
     <div id="home">
         <div class="home__img"  data-aos="fade-in" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="1500">
             <img src="img/main.jpeg" alt="">
-            <h1 class="logo">
+            <div class="logo">
                 <div><span class="logo--red">19</span><span class="logo--blue">HOLE</span><br></div>
                 <span class="logo--yellow">GOLF</span>
-            </h1>
+            </div>
         </div>
         
 
