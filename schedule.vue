@@ -30,7 +30,7 @@ const { log }=require("console");
                 schedules: [
                                 { id: 1, date: '2021-11-27', location: '佐野ゴルフクラブ', title: '佐野コンペ', modal: 'hello-world1' },
                                 { id: 2, date: '2021-12-18', location: '大平台カントリークラブ', title: 'クリスマスコンペ', modal: 'hello-world2' },
-                                // { id: 3, date: '2021-11-27', location: '軽井沢カントリークラブ', title: 'ゴルフ合宿', modal: 'hello-world3' },
+                                { id: 3, date: '2022-01-30', location: '埼玉国際ゴルフ倶楽部', title: 'コンペ', modal: 'hello-world3' },
                                 // { id: 4, date: '2021-11-27', location: '佐野ゴルフクラブ', title: '佐野コンペ', modal: 'hello-world4' },
                             ],
                 modals: [
@@ -76,8 +76,8 @@ const { log }=require("console");
 
                                                                                 【キャンセルについて】<br><br>
                                                                                 一週間前よりキャンセル料金が発生するので、お早めにご連絡お願いします。` },
-                    { id: 1, name: "hello-world2", title: 'クリスマスコンペ', content: '' },
-                    // { id: 1, name: "hello-world3", title: 'ゴルフ合宿', content: 'hello-world3' },
+                    { id: 2, name: "hello-world2", title: 'クリスマスコンペ', content: '' },
+                    { id: 3, name: "hello-world3", title: '埼玉国際ゴルフ倶楽部', content: '9:30 東コーススタート<br><br>総額11700円' },
                     // { id: 1, name: "hello-world4", title: '佐野コンペ', content: 'hello-world4,' }
                 ]
             }
