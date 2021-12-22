@@ -84,3 +84,10 @@ new Vue({
   }
 })
 AOS.init();
+
+// bootstrap ヘッダーのメニューをスマホときにクリックしたら閉じる
+$(document).ready(function () {
+  $('.navbar-nav li a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
+});
