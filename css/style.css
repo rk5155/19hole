@@ -4,6 +4,7 @@ body {
   font-family: 'M+ Type-1 (general-j) Regular';
   background-color: #2E2E2E !important;
   color: #ffffff !important;
+  padding-top: 62px;
 }
 
 #main {
@@ -114,6 +115,14 @@ body {
 
 #header {
   font-family: 'Caveat', cursive;
+}
+
+#header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #2E2E2E !important;
 }
 
 #header nav .navbar-toggler {
