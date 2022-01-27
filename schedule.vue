@@ -98,7 +98,7 @@ const { log }=require("console");
                     <span>{{ date }}</span>
                     <span>{{ location }}</span>
                     <span>{{ title }}</span>
-                    <button type="button" class="btn btn-outline-warning">詳細</button>
+                    <button type="button" class="btn">詳細</button>
                    </li>
                    `
     })
@@ -143,6 +143,9 @@ const { log }=require("console");
 
     .modal-header, .modal-body {
         padding: 25px;
+    }
+    .v--modal {
+        color: #333333;
     }
     .v--modal-box {
         overflow: scroll;
