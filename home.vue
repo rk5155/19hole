@@ -1,7 +1,7 @@
 <template>
     <div id="home">
         <div class="home__img"  data-aos="fade-in" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="1500">
-            <img src="img/main.jpeg" alt="">
+            <img src="img/main_01.png" alt="">
             <div class="logo">
                 <div><span class="logo--red">19</span><span class="logo--blue">HOLE</span><br></div>
                 <span class="logo--yellow">GOLF</span>
@@ -162,7 +162,7 @@
 
                 ],
                 mainTexts: [
-                    { id: 1, path: "img/img_01.jpg", h2: 'サークルで人と繋がる。', p: `ゴルフを始めたけど、一緒に行く仲間がいない。<br>たくさんの人に出会えるし、少しでも上手くなろうと一生懸命に練習する姿は美しい。<br>同世代のゴルフ友達が欲しい。<br>ゴルフを通してたくさんの知り合いが欲しい。<br>Enjoy Golf!! 新しいゴルフが始まります。` }
+                    { id: 1, path: "img/img_01.jpg", h2: '20代30代関東ゴルフサークル', p: `メンバー随時募集しています⛳️<br>同年代で初心者、経験者問わず、誰でもゴルフが好きな人が楽しめるサークルです。` },
                 ]
             }
         }
@@ -175,24 +175,24 @@
         position: relative;
     }
     .logo {
-        color: #333333;
-        background-color: #ffffff;
-        font-size: 30px;
+        font-size: 210px;
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 43%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         margin: auto;
         padding: 40px 20px;
         font-weight: bold;
         letter-spacing: 0.04em;
+        line-height: 1;
+        font-family: 'Caveat', cursive;
     }
     .logo--red {
         color: palevioletred;
     }
     .logo--blue {
-        color: #007bff;
+        color: #0B0B61;
     }
     .logo--yellow {
         color: #E6E28B;
@@ -205,5 +205,10 @@
     .home, .contact__inner {
         width: 1200px;
         margin: 0 auto;
+    }
+    @media screen and (max-width: 580px) {
+        #home .logo {
+            font-size: 70px;
+        }
     }
 </style>
