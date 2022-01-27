@@ -52,8 +52,8 @@ Vue.component('main-text', {
                 <div>
                     <h2>{{ text.h2 }}</h2>
                     <p v-html="text.p"></p>
+                    <slot></slot>
                 </div>
-
                 <img v-bind:src="text.path">
               </div>`
 })

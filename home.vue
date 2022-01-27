@@ -13,7 +13,9 @@
 
             <!-- 親コンポーネント -->
             <!-- v-bind:text="text" 子コンポーネントのpropsにtextを渡す -->
-            <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text"></main-text>
+            <main-text v-for="text in mainTexts" v-bind:key="text.id" v-bind:text="text">
+                <router-link class="main-box__contact" to="/contact" exact>お問い合わせ</router-link>
+            </main-text>
 
             <div>
                 <h2 class="c-title__h2" style="margin: 0 26px 30px;">MAMBER</h2>
@@ -210,5 +212,13 @@
         #home .logo {
             font-size: 70px;
         }
+    }
+    .main-box__contact {
+        border: 1px solid palevioletred;
+        border-radius: 8px;
+        padding: 14px 26px;
+        display: inline-block;
+        color: palevioletred;
+        margin-top: 20px;
     }
 </style>
