@@ -63,8 +63,8 @@ Vue.component('width', {
   template: `<div v-bind:id="id" class="width">
                 <div class="contact__inner">
                     <h2>{{ title }}</h2>
-                    <p><slot>お問い合わせは下記、<br>もしくはInstagramよりお願いいたします。</slot></p>
-                    <a v-bind:href="address">{{ text }}</a>
+                    <p><slot>公式LINEを追加してサークルに参加できます！</slot></p>
+                    <a v-bind:href="address" target='blank'>{{ text }}</a>
                 </div>
               </div>`
 })

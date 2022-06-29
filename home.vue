@@ -34,7 +34,7 @@
             
         </div>
 
-        <width title="CONTACT" address="mailto:vinder_golf@outlook.jp" text="お問い合わせ" id="contact"></width>
+        <width title="LINE" address="https://lin.ee/xmjGRHc" text="公式LINEはこちら" id="contact"></width>
 
         <width title="Instagram" address="https://www.instagram.com/19hole_golf/" text="INSTAGRAM" id="instagram">日々の活動を投稿しています。</width>
     </div>
